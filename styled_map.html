@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="resources/css/styled_map.css">
+    <title>Haines, AK Utility Map</title>
+  </head>
+
+  <body>
+    <div class="main-header heading-border-bottom">
+    <h1>Haines, AK | Water Utility Map</h1>
+    </div>
+    
+    <!-- based on the example provided by Google - https://developers.google.com/maps/documentation/javascript/examples/style-selector -->
+    <div id="style-selector-control"  class="map-control">
+      <select id="style-selector" class="selector-control">
+        <option value="retro" selected="selected">Retro</option>
+        <option value="standard">Standard With All Roads</option>
+        <option value="aubergine">Aubergine</option>
+      </select>
+    </div>
+    
+    <div id="event-map" name="event-map"></div>
+
+
+    
+
+  </body>
+
+    <script src="resources/js/styled_map.js"></script>
+    
+    
+    <script async defer 
+      src="https://maps.googleapis.com/maps/api/js?callback=initialize&key=AIzaSyCRhO2KOYTxC_8VsvMOAwRoAGMjt97Gey0">
+      </script>
+  </body>
+</html>
