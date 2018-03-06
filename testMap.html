@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Styled Map Types</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/testMap.css">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <h1>Haines Alaska Water Utility</h1>
+    <div id="style-selector-control"  class="map-control">
+      <select id="style-selector" class="selector-control">
+        <option value="default">Default</option>
+        <option value="silver">Silver</option>
+        <option value="night">Night mode</option>
+        <option value="retro" selected="selected">Retro</option>
+        <option value="hiding">Hide features</option>
+      </select>
+    </div>
+    
+    <div id="event-map" name="event-map"></div>
+
+    <script src="resources/js/testMap.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRhO2KOYTxC_8VsvMOAwRoAGMjt97Gey0&callback=initMap">
+    </script>
+  </body>
+</html>
