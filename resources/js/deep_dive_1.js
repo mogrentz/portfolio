@@ -1,5 +1,5 @@
 var map;
-
+var water_mains = 'https://mogrentz.github.io/portfolio/resources/kml/WaterMains.kml';
 
 function initialize() {
 	geoCenter = new google.maps.LatLng(59.2358, -135.4450) 
@@ -14,28 +14,49 @@ function initialize() {
 		document.getElementById("event-map"), 
 		myOptions);
 
-var testMarker = new google.maps.Marker({
-    position: geoCenter,
-    title:"Geography 485L/585L Classroom, Bandelier East, Room 106"
-    });
-    testMarker.setMap(map);
+// var testMarker = new google.maps.Marker({
+//     position: geoCenter,
+//     title:"Geography 485L/585L Classroom, Bandelier East, Room 106"
+//     });
+//     testMarker.setMap(map);
 
-  var fifthAndUnionCoord = [
-    {lat: 59.237606, lng: -135.451020},
-    {lat: 59.237448, lng: -135.448987}
-  ];
+  // var fifthAndUnionCoord = [
+  //   {lat: 59.237606, lng: -135.451020},
+  //   {lat: 59.237448, lng: -135.448987}
+  // ];
 
 
 
-  var fifthAndUnion = new google.maps.Polyline({
-    path: fifthAndUnionCoord,
-    geodesic: true,
-    strokeColor: '#FF0000',
-    strokeOpacity: 1.0,
-    strokeWeight: 2
-  });
+  // var fifthAndUnion = new google.maps.Polyline({
+  //   path: fifthAndUnionCoord,
+  //   geodesic: true,
+  //   strokeColor: '#FF0000',
+  //   strokeOpacity: 1.0,
+  //   strokeWeight: 2
+  // });
 
-  fifthAndUnion.setMap(map);
+  // fifthAndUnion.setMap(map);
+
+
+
+  //KML Layer of water mains
+       var kmlLayer = new google.maps.KmlLayer(water_mains, {
+          suppressInfoWindows: true,
+          preserveViewport: true,
+          map: map
+        });
+        kmlLayer.addListener('click', function(event) {
+          var content = event.featureData.infoWindowHtml;
+          testimonial.innerHTML = content;
+        });
+
+
+
+
+  //End KML Layer of water mains
+
+
+
 
   	
   	// Add a style-selector control to the map.
