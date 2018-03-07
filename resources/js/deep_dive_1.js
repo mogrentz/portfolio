@@ -48,7 +48,7 @@ function initialize() {
           map: map
         });
         kmlLayer.addListener('click', function(event) {
-          var content = event.featureData.infoWindowHtml;
+          var testimonial = document.getElementById('capture');
           testimonial.innerHTML = content;
         });
   //End KML Layer of water mains
@@ -61,6 +61,7 @@ function initialize() {
         });
         kmlLayer.addListener('click', function(event) {
           var content = event.featureData.infoWindowHtml;
+          var testimonial = document.getElementById('capture');
           testimonial.innerHTML = content;
         });
   //End KML Layer of hydrants
@@ -74,6 +75,7 @@ function initialize() {
         });
         kmlLayer.addListener('click', function(event) {
           var content = event.featureData.infoWindowHtml;
+          var testimonial = document.getElementById('capture');
           testimonial.innerHTML = content;
         });
   // //End KML Layer of hydrants legs
