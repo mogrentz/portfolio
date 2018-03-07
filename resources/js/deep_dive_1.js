@@ -1,5 +1,7 @@
 var map;
 var water_mains = 'https://mogrentz.github.io/portfolio/resources/kml/WaterMains.kml';
+var hydrants = 'https://mogrentz.github.io/portfolio/resources/kml/FireHydrant.kml';
+var hydrant_legs = 'https://mogrentz.github.io/portfolio/resources/kml/HydrantLeg.kml';
 
 function initialize() {
 	geoCenter = new google.maps.LatLng(59.2358, -135.4450) 
@@ -49,13 +51,32 @@ function initialize() {
           var content = event.featureData.infoWindowHtml;
           testimonial.innerHTML = content;
         });
-
-
-
-
   //End KML Layer of water mains
 
+  //KML Layer of hydrants
+       var kmlLayer = new google.maps.KmlLayer(hydrants, {
+          suppressInfoWindows: true,
+          preserveViewport: true,
+          map: map
+        });
+        kmlLayer.addListener('click', function(event) {
+          var content = event.featureData.infoWindowHtml;
+          testimonial.innerHTML = content;
+        });
+  //End KML Layer of hydrants
 
+
+  //KML Layer of hydrants
+       var kmlLayer = new google.maps.KmlLayer(HydrantLeg, {
+          suppressInfoWindows: true,
+          preserveViewport: true,
+          map: map
+        });
+        kmlLayer.addListener('click', function(event) {
+          var content = event.featureData.infoWindowHtml;
+          testimonial.innerHTML = content;
+        });
+  //End KML Layer of hydrants
 
 
   	
