@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="resources/css/styled_map.css">
+    <title>Haines, AK Utility Map</title>
+  </head>
+
+  <body>
+    <div class="main-header heading-border-bottom">
+    <h1>Haines, AK | Water Utility Map</h1>
+    <section class="container">
+    <div class="left"><h2>Type of information dipicted:</h2></div><div class="right"><p> water mains, sewer mains, manhole covers, and hydrants</p></div>
+  </section>
+    <h2>Reason for selecting Haines, AK</h2>
+    <p>I am in the process of creating a water utility map for the Haines Burough using ArcGIS and was interested to display this information using new technologies</p>
+    <h2>Uses:</h2>
+    <p>The purpose of this map will be to allow water operators a reference point for their water and waterwater lines, as well as some of their above ground assets.</p>
+    </div>
+    
+    <!-- based on the example provided by Google - https://developers.google.com/maps/documentation/javascript/examples/style-selector -->
+    <div id="style-selector-control"  class="map-control">
+      <select id="style-selector" class="selector-control">
+        <option value="retro" selected="selected">Retro</option>
+        <option value="standard">Standard With All Roads</option>
+        <option value="aubergine">Aubergine</option>
+      </select>
+    </div>
+    
+    <div id="event-map" name="event-map"></div>
+
+
+    
+
+  </body>
+
+    <script src="resources/js/styled_map_with_markers.js"></script>
+    
+    
+    <script async defer 
+      src="https://maps.googleapis.com/maps/api/js?callback=initialize&key=AIzaSyCRhO2KOYTxC_8VsvMOAwRoAGMjt97Gey0">
+      </script>
+  </body>
+</html>
