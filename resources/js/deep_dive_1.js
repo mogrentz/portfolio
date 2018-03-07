@@ -66,17 +66,17 @@ function initialize() {
   //End KML Layer of hydrants
 
 
-  //KML Layer of hydrants
-       var kmlLayer = new google.maps.KmlLayer(HydrantLeg, {
-          suppressInfoWindows: true,
-          preserveViewport: true,
-          map: map
-        });
-        kmlLayer.addListener('click', function(event) {
-          var content = event.featureData.infoWindowHtml;
-          testimonial.innerHTML = content;
-        });
-  //End KML Layer of hydrants
+  // //KML Layer of hydrants legs
+  //      var kmlLayer = new google.maps.KmlLayer(HydrantLeg, {
+  //         suppressInfoWindows: true,
+  //         preserveViewport: true,
+  //         map: map
+  //       });
+  //       kmlLayer.addListener('click', function(event) {
+  //         var content = event.featureData.infoWindowHtml;
+  //         testimonial.innerHTML = content;
+  //       });
+  // //End KML Layer of hydrants legs
 
 
   	
