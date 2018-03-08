@@ -1,8 +1,9 @@
 var map;
+var water_valves = 'https://mogrentz.github.io/portfolio/resources/kml/WaterValves.kml';
 var water_mains = 'https://mogrentz.github.io/portfolio/resources/kml/WaterMains.kml';
 var hydrants = 'https://mogrentz.github.io/portfolio/resources/kml/FireHydrant.kml';
 var hydrant_legs = 'https://mogrentz.github.io/portfolio/resources/kml/HydrantLeg.kml';
-var water_valves = 'https://mogrentz.github.io/portfolio/resources/kml/WaterValves.kml'
+
 
 function initialize() {
 	geoCenter = new google.maps.LatLng(59.2358, -135.4450) 
@@ -85,7 +86,7 @@ function initialize() {
   // //End KML Layer of hydrants legs
 
 
-    // //KML Layer of hydrants legs
+    // //KML Layer of water valves
        var kmlLayer = new google.maps.KmlLayer(water_valves, {
           suppressInfoWindows: false,
           preserveViewport: true,
@@ -98,7 +99,7 @@ function initialize() {
           var testimonial = document.getElementById('capture');
           testimonial.innerHTML = content;
         });
-  // //End KML Layer of hydrants legs
+  // //End KML Layer of water valves
 
 
   	
