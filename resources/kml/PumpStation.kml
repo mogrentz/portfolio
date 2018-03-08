@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="PumpStation" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<name>PumpStation</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="IconStyle00">
+		<IconStyle>
+			<scale>1.5625</scale>
+			<Icon>
+				<href>Layer0_Symbol_4e14578_0.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<PolyStyle>
+			<color>ff000000</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>PumpStation</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_00000">
+			<name>1</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Point</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle00</styleUrl>
+			<Point>
+				<coordinates>-135.4424214306431,59.23226998709397,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="ID_00001">
+			<name>2</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>2</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Point</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle00</styleUrl>
+			<Point>
+				<coordinates>-135.4567197901996,59.23131655068364,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="ID_00002">
+			<name>3</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>3</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Point</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle00</styleUrl>
+			<Point>
+				<coordinates>-135.4324467735204,59.24912133635947,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="ID_00003">
+			<name>4</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>4</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Point</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle00</styleUrl>
+			<Point>
+				<coordinates>-135.4687573319005,59.23663633730821,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="ID_00004">
+			<name>5</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Point</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle00</styleUrl>
+			<Point>
+				<coordinates>-135.4774442340783,59.23787443990112,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

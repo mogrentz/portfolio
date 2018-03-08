@@ -3,6 +3,7 @@ var water_valves = 'https://mogrentz.github.io/portfolio/resources/kml/WaterValv
 var water_mains = 'https://mogrentz.github.io/portfolio/resources/kml/WaterMains.kml';
 var hydrants = 'https://mogrentz.github.io/portfolio/resources/kml/FireHydrant.kml';
 var hydrant_legs = 'https://mogrentz.github.io/portfolio/resources/kml/HydrantLeg.kml';
+var pumping_stations = 'https://mogrentz.github.io/portfolio/resources/kml/PumpStation.kml'
 
 
 function initialize() {
@@ -101,6 +102,21 @@ function initialize() {
         });
   // //End KML Layer of water valves
 
+
+    // //KML Layer of pumping stations
+       var kmlLayer = new google.maps.KmlLayer(pumping_stations, {
+          suppressInfoWindows: false,
+          preserveViewport: true,
+          map: map
+        });
+
+
+        kmlLayer.addListener('click', function(event) {
+          var content = event.featureData.infoBoxHtml;
+          var testimonial = document.getElementById('capture');
+          testimonial.innerHTML = content;
+        });
+  // //End KML Layer of pumping stations
 
   	
   	// Add a style-selector control to the map.
