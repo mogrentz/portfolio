@@ -43,7 +43,7 @@ function initialize() {
 
   //KML Layer of water mains
        var kmlLayer = new google.maps.KmlLayer(water_mains, {
-          suppressInfoWindows: true,
+          suppressInfoWindows: false,
           preserveViewport: true,
           title:"Geography 485L/585L Classroom, Bandelier East, Room 106",
           map: map
@@ -56,7 +56,7 @@ function initialize() {
 
   //KML Layer of hydrants
        var kmlLayer = new google.maps.KmlLayer(hydrants, {
-          suppressInfoWindows: true,
+          suppressInfoWindows: false,
           preserveViewport: true,
           map: map
         });
@@ -70,12 +70,14 @@ function initialize() {
 
   // //KML Layer of hydrants legs
        var kmlLayer = new google.maps.KmlLayer(hydrant_legs, {
-          suppressInfoWindows: true,
+          suppressInfoWindows: false,
           preserveViewport: true,
           map: map
         });
+
+
         kmlLayer.addListener('click', function(event) {
-          var content = event.featureData.infoWindowHtml;
+          var content = event.featureData.infoBoxHtml;
           var testimonial = document.getElementById('capture');
           testimonial.innerHTML = content;
         });
