@@ -45,47 +45,47 @@ function initialize() {
 
 
 
-  //KML Layer of water mains
-       var kmlLayer = new google.maps.KmlLayer(water_mains, {
-          suppressInfoWindows: false,
-          preserveViewport: true,
-          title:"Geography 485L/585L Classroom, Bandelier East, Room 106",
-          map: map
-        });
-        kmlLayer.addListener('click', function(event) {
-          var testimonial = document.getElementById('capture');
-          testimonial.innerHTML = content;
-        });
-  //End KML Layer of water mains
+  // //KML Layer of water mains
+  //      var kmlLayer = new google.maps.KmlLayer(water_mains, {
+  //         suppressInfoWindows: false,
+  //         preserveViewport: true,
+  //         title:"Geography 485L/585L Classroom, Bandelier East, Room 106",
+  //         map: map
+  //       });
+  //       kmlLayer.addListener('click', function(event) {
+  //         var testimonial = document.getElementById('capture');
+  //         testimonial.innerHTML = content;
+  //       });
+  // //End KML Layer of water mains
 
-  //KML Layer of hydrants
-       var kmlLayer = new google.maps.KmlLayer(hydrants, {
-          suppressInfoWindows: false,
-          preserveViewport: true,
-          map: map
-        });
-        kmlLayer.addListener('click', function(event) {
-          var content = event.featureData.infoWindowHtml;
-          var testimonial = document.getElementById('capture');
-          testimonial.innerHTML = content;
-        });
-  //End KML Layer of hydrants
-
-
-  // //KML Layer of hydrants legs
-       var kmlLayer = new google.maps.KmlLayer(hydrant_legs, {
-          suppressInfoWindows: false,
-          preserveViewport: true,
-          map: map
-        });
+  // //KML Layer of hydrants
+  //      var kmlLayer = new google.maps.KmlLayer(hydrants, {
+  //         suppressInfoWindows: false,
+  //         preserveViewport: true,
+  //         map: map
+  //       });
+  //       kmlLayer.addListener('click', function(event) {
+  //         var content = event.featureData.infoWindowHtml;
+  //         var testimonial = document.getElementById('capture');
+  //         testimonial.innerHTML = content;
+  //       });
+  // //End KML Layer of hydrants
 
 
-        kmlLayer.addListener('click', function(event) {
-          var content = event.featureData.infoBoxHtml;
-          var testimonial = document.getElementById('capture');
-          testimonial.innerHTML = content;
-        });
-  // //End KML Layer of hydrants legs
+  // // //KML Layer of hydrants legs
+  //      var kmlLayer = new google.maps.KmlLayer(hydrant_legs, {
+  //         suppressInfoWindows: false,
+  //         preserveViewport: true,
+  //         map: map
+  //       });
+
+
+  //       kmlLayer.addListener('click', function(event) {
+  //         var content = event.featureData.infoBoxHtml;
+  //         var testimonial = document.getElementById('capture');
+  //         testimonial.innerHTML = content;
+  //       });
+  // // //End KML Layer of hydrants legs
 
 
     // //KML Layer of water valves
