@@ -1,6 +1,6 @@
 var map;
-var water_valves = 'https://mogrentz.github.io/portfolio/resources/kml/WaterValvesSym.kml';
-var water_mains = 'https://mogrentz.github.io/portfolio/resources/kml/WaterMains.kml';
+// var water_valves = 'https://mogrentz.github.io/portfolio/resources/kml/WaterValvesSym.kml';
+// var water_mains = 'https://mogrentz.github.io/portfolio/resources/kml/WaterMains.kml';
 // var hydrants = 'https://mogrentz.github.io/portfolio/resources/kml/FireHydrant.kml';
 // var hydrant_legs = 'https://mogrentz.github.io/portfolio/resources/kml/HydrantLeg.kml';
 var pumping_stations = 'https://mogrentz.github.io/portfolio/resources/kml/PumpStation.kml';
