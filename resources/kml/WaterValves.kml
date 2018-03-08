@@ -5,14 +5,14 @@
 	<Snippet maxLines="0"></Snippet>
 	<Style id="IconStyle00">
 		<IconStyle>
-			<scale>0.25</scale>
+			<scale>1.125</scale>
 			<Icon>
-				<href>'https://mogrentz.github.io/portfolio/resources/kml/Layer0_Symbol_90272c8_0.png'</href>
+				<href>'https://mogrentz.github.io/portfolio/resources/kml/Layer0_Symbol_90272c8_0_0.png'</href>
 			</Icon>
 		</IconStyle>
 		<LabelStyle>
 			<color>00000000</color>
-			<scale>100</scale>
+			<scale>0</scale>
 		</LabelStyle>
 		<PolyStyle>
 			<color>ff000000</color>
