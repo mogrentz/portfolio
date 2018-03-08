@@ -45,6 +45,7 @@ function initialize() {
        var kmlLayer = new google.maps.KmlLayer(water_mains, {
           suppressInfoWindows: true,
           preserveViewport: true,
+          title:"Geography 485L/585L Classroom, Bandelier East, Room 106",
           map: map
         });
         kmlLayer.addListener('click', function(event) {
