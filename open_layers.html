@@ -10,18 +10,18 @@
   <body>
     <div id="map" class="map"></div>
     <script>
-      var map = new ol.Map({
-        layers: [
-          new ol.layer.Tile({
-            source: new ol.source.OSM()
-          })
-        ],
-        target: 'map',
-        view: new ol.View({
-          center: [0, 0],
-          zoom: 2
-        })
-      });
+ var map = new ol.Map({
+    target: 'map',
+    layers: [
+      new ol.layer.Tile({
+        source: new ol.source.OSM()
+      })
+    ],
+    view: new ol.View({
+      center: ol.proj.fromLonLat([-135.44, 59.2358] ),
+      zoom: 14.5
+    })
+  });
     </script>
   </body>
 </html>
