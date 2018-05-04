@@ -15,21 +15,7 @@
     layers: [
       new ol.layer.Tile({
         source: new ol.source.OSM()
-      }),
-
- new OpenLayers.Layer.Vector("KML", {
-            strategies: [new OpenLayers.Strategy.Fixed()],
-            protocol: new OpenLayers.Protocol.HTTP({
-                url: "resources/kml/WaterMaines.kml",
-                format: new OpenLayers.Format.KML({
-                    extractStyles: true, 
-                    extractAttributes: true,
-                    maxDepth: 2
-                })
-            })
-
-
-
+      })
     ],
     view: new ol.View({
       center: ol.proj.fromLonLat([-135.44, 59.2358] ),
