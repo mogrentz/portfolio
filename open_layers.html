@@ -10,18 +10,37 @@
   <body>
     <div id="map" class="map"></div>
     <script>
- var map = new ol.Map({
-    target: 'map',
-    layers: [
-      new ol.layer.Tile({
-        source: new ol.source.OSM()
-      })
-    ],
-    view: new ol.View({
-      center: ol.proj.fromLonLat([-135.44, 59.2358] ),
-      zoom: 14.5
+      var map = new ol.Map({
+          target: 'map',
+          layers: [
+            new ol.layer.Tile({
+              source: new ol.source.OSM()
+            })
+          ],
+          view: new ol.View({
+            center: ol.proj.fromLonLat([-135.44, 59.2358] ),
+            zoom: 14.5
+          })
+        });
+
+  map.addLayer (new ol.layer.Tile ({
+    source: new ol.source.TileWMS ({
+      url: 'http://internetmapping.net:8080/geoserver/mogrentz/wms',
+      params: {Layers: 'mogrentz:FireHydrant'}
     })
-  });
+  }),
+
+
+  );
+
+
+
+
+
+
+
     </script>
+
+
   </body>
 </html>
