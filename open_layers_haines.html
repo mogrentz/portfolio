@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Haines, AK Water Utility (Fire Hydrants, Manhole Covers, and Water Valves</title>
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+    <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+  </head>
+  <body>
+
+<div>
+  <h1>Haines, AK Water Utility</h1>
+  <p>This map is intended as an example of what can be achieved through the use of OpenLayers and GeoServer techniques learned through UNM's GEOG 585L course. The map includes a basemap centering on Haines Borough, AK featuring 5 different assets of the public Water Utility. The assets include: Water Mains (Blue lines), Sewer Mains (Green lines), Fire Hydrants (Red circle with a cross), Man Hole Covers (Yellow circles), and Water Valves (Red circle with only the outlines visible).</p>
+  <p>Taken to completion, the map would ultimately include a popup window for each asset which could include pertinent data on the assets such as; condition, maintenance information, operators notes, and links to as-built diagrams and asset imagery.</p>
+</div>
+
+
+    <div id="map" class="map"></div>
+    <script>
+      var map = new ol.Map({
+          target: 'map',
+          layers: [
+            new ol.layer.Tile({
+              source: new ol.source.OSM()
+            })
+          ],
+          view: new ol.View({
+            center: ol.proj.fromLonLat([-135.44, 59.2358] ),
+            zoom: 14.5
+          })
+        });
+
+      map.addLayer (new ol.layer.Tile ({
+        source: new ol.source.TileWMS ({
+          url: 'http://internetmapping.net:8080/geoserver/mogrentz/wms',
+          params: {Layers: 'mogrentz:SewerMains'}
+        })
+      }),
+      );    
+
+      map.addLayer (new ol.layer.Tile ({
+        source: new ol.source.TileWMS ({
+          url: 'http://internetmapping.net:8080/geoserver/mogrentz/wms',
+          params: {Layers: 'mogrentz:WaterMains'}
+        })
+      }),
+      );    
+
+      map.addLayer (new ol.layer.Tile ({
+        source: new ol.source.TileWMS ({
+          url: 'http://internetmapping.net:8080/geoserver/mogrentz/wms',
+          params: {Layers: 'mogrentz:FireHydrant'}
+        })
+      }),
+      );
+
+      map.addLayer (new ol.layer.Tile ({
+        source: new ol.source.TileWMS ({
+          url: 'http://internetmapping.net:8080/geoserver/mogrentz/wms',
+          params: {Layers: 'mogrentz:ManHole'}
+        })
+      }),
+      );
+
+      map.addLayer (new ol.layer.Tile ({
+        source: new ol.source.TileWMS ({
+          url: 'http://internetmapping.net:8080/geoserver/mogrentz/wms',
+          params: {Layers: 'mogrentz:WaterValves'}
+        })
+      }),
+      );
+
+
+    </script>
+  </body>
+</html>
