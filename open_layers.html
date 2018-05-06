@@ -23,24 +23,47 @@
           })
         });
 
-  map.addLayer (new ol.layer.Tile ({
-    source: new ol.source.TileWMS ({
-      url: 'http://internetmapping.net:8080/geoserver/mogrentz/wms',
-      params: {Layers: 'mogrentz:FireHydrant'}
-    })
-  }),
+      map.addLayer (new ol.layer.Tile ({
+        source: new ol.source.TileWMS ({
+          url: 'http://internetmapping.net:8080/geoserver/mogrentz/wms',
+          params: {Layers: 'mogrentz:SewerMains'}
+        })
+      }),
+      );    
 
+      map.addLayer (new ol.layer.Tile ({
+        source: new ol.source.TileWMS ({
+          url: 'http://internetmapping.net:8080/geoserver/mogrentz/wms',
+          params: {Layers: 'mogrentz:WaterMains'}
+        })
+      }),
+      );    
 
-  );
+      map.addLayer (new ol.layer.Tile ({
+        source: new ol.source.TileWMS ({
+          url: 'http://internetmapping.net:8080/geoserver/mogrentz/wms',
+          params: {Layers: 'mogrentz:FireHydrant'}
+        })
+      }),
+      );
 
+      map.addLayer (new ol.layer.Tile ({
+        source: new ol.source.TileWMS ({
+          url: 'http://internetmapping.net:8080/geoserver/mogrentz/wms',
+          params: {Layers: 'mogrentz:ManHole'}
+        })
+      }),
+      );
 
-
-
-
+      map.addLayer (new ol.layer.Tile ({
+        source: new ol.source.TileWMS ({
+          url: 'http://internetmapping.net:8080/geoserver/mogrentz/wms',
+          params: {Layers: 'mogrentz:WaterValves'}
+        })
+      }),
+      );
 
 
     </script>
-
-
   </body>
 </html>
