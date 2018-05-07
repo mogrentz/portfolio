@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GEOG 585L Final</title>
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+    <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+  </head>
+  <body>
+<h1><center>Final Exam: GEOG 585L</center></h1>
+<p><center>Mark Ogrentz</center></p>
+
+
+    <div id="map" class="map"></div>
+    <script>
+      var map = new ol.Map({
+          target: 'map',
+          layers: [
+            new ol.layer.Tile({
+              source: new ol.source.OSM()
+            })
+          ],
+          view: new ol.View({
+            center: ol.proj.fromLonLat([-106.621216, 35.09] ),
+            zoom: 13.5
+          })
+        });
+
+      map.addLayer (new ol.layer.Tile ({
+        source: new ol.source.TileWMS ({
+          url: 'http://internetmapping.net:8080/geoserver/mogrentz/wms',
+          params: {Layers: 'mogrentz:tgr2006se_bern_lka'}
+        })
+      }),
+      );    
+
+
+
+      map.addLayer (new ol.layer.Tile ({
+        source: new ol.source.TileWMS ({
+          url: 'http://internetmapping.net:8080/geoserver/mogrentz/wms',
+          params: {
+          Layers: 'mogrentz:35106-A5',
+          FORMAT: 'image/png',
+          opacity: 0.5,
+                    visible: true,}
+        })
+      }),
+      );
+
+      map.addLayer (new ol.layer.Tile ({
+        source: new ol.source.TileWMS ({
+          url: 'http://internetmapping.net:8080/geoserver/mogrentz/wms',
+          params: {Layers: 'mogrentz:35106-A5_CONT'}
+        })
+      }),
+      );
+
+      map.addLayer (new ol.layer.Tile ({
+        source: new ol.source.TileWMS ({
+          url: 'http://internetmapping.net:8080/geoserver/mogrentz/wms',
+          params: {Layers: 'mogrentz:35106-A6',}
+        })
+      }),
+      );
+
+      map.addLayer (new ol.layer.Tile ({
+        source: new ol.source.TileWMS ({
+          url: 'http://internetmapping.net:8080/geoserver/mogrentz/wms',
+          params: {Layers: 'mogrentz:35106-A6_CONT'}
+        })
+      }),
+      );    
+
+
+      map.addLayer (new ol.layer.Tile ({
+        source: new ol.source.TileWMS ({
+          url: 'http://internetmapping.net:8080/geoserver/mogrentz/wms',
+          params: {Layers: 'mogrentz:ManHole'}
+        })
+      }),
+      );
+
+      map.addLayer (new ol.layer.Tile ({
+        source: new ol.source.TileWMS ({
+          url: 'http://internetmapping.net:8080/geoserver/mogrentz/wms',
+          params: {Layers: 'mogrentz:WaterValves'}
+        })
+      }),
+      );
+
+
+    </script>
+  </body>
+</html>
